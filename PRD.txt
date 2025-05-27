@@ -1,0 +1,16 @@
+References:
+1. https://www.biblos.app/
+2. https://huggingface.co/datasets/LetsChurch/bible-embeddings
+
+
+Workflow:
+1. Examine whether user inputed exact verse of bible (using cosine similarity against bible);
+2a. If yes then return, and if not,
+2. Pass to Counseling Agent Subworkflow (CAS) to decide the spiritual trouble of user and the related verse of bible;
+3. cosine similarity of CAS output with bible.
+
+Requirements:
+1. host all files firstly on local machine, for convenience of testing;
+2. deploy on LLM cloud service, for possible future scalability;
+3. (after obtaining subscription) upgrade LLM cloud server.
+
