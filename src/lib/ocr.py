@@ -1,9 +1,6 @@
 import pdf2image
-try:
-    from PIL import Image
-except ImportError:
-    import Image
 import pytesseract
+from tqdm import tqdm
 
 
 def pdf_to_img(pdf_file):
@@ -15,10 +12,8 @@ def ocr_core(file):
     return text
 
 
-def print_pages(pdf_file):
+def print_pages(pdf_file, output_file):
     images = pdf_to_img(pdf_file)
-    for pg, img in enumerate(images):
-        print(ocr_core(img))
-
-
-print_pages('sample.pdf')
+    with open(output_file, 'w') as f:
+        for img in tqdm(images):
+            f.write(ocr_core(img))
