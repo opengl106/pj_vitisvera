@@ -4,4 +4,16 @@
 
 
 # Introduction
-This project is a vector database for querying the Bible. For usage instance, see [ShizuBot - The Vine](https://labmikazu.dscf.one/shizubot?model=vine).
+Working in progress, this project is a graph-vector database and GRAG pipeline with a load balance backend.
+
+Tech stack:
+- Python
+- LangChain
+- HuggingFace
+- Qdrant
+- Neo4j (planning)
+- Docker Compose (planning)
+- FastAPI (planning)
+- Celery (planning)
+- RabbitMQ (planning)
+- React (planning)
