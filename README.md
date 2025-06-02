@@ -16,4 +16,5 @@ Tech stack:
 - FastAPI (planning)
 - Celery (planning)
 - RabbitMQ (planning)
+- Redis (planning)
 - React (planning)

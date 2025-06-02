@@ -10,3 +10,5 @@ qdrant-client == 1.14.2
 langchain-qdrant == 0.2.0
 langchain-community == 0.3.24
 langchain-huggingface == 0.2.0
+bitsandbytes == 0.46.0
+accelerate == 1.7.0

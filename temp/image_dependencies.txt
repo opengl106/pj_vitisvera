@@ -4,7 +4,7 @@ sudo apt-get install tesseract-ocr
 
 docker pull qdrant/qdrant
 docker run -p 6333:6333 \
-    -v /home/opengl106/.cache/qdrant:/qdrant/storage \
+    -v /media/opengl106/神楽坂・Z・梓月/.cache/qdrant:/qdrant/storage \
     qdrant/qdrant
 
 services:
